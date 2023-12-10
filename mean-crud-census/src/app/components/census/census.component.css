@@ -1,0 +1,10 @@
+/* add-census.component.css */
+.add-census-form {
+    margin-top: 20px;
+    /* Add space at the top */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Add space between form groups */
+}

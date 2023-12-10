@@ -1,0 +1,57 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form [formGroup]="censusForm" (ngSubmit)="onSubmit()" class="add-census-form">
+
+        <div class="form-group">
+          <label for="number_of_people">Number of People:</label>
+          <br>
+          <input id="number_of_people" class="form-control" type="text" formControlName="number_of_people" required>
+        </div>
+        
+<P>Address Information:</P>
+
+          <div class="form-group">
+            <label for="street">Street:</label>
+            <br>
+            <input id="street" class="form-control" type="text" formControlName="street" required>
+          </div>
+
+
+        <div class="form-group">
+          <label for="city">City:</label>
+          <br>
+          <input id="city" class="form-control" type="text" formControlName="city" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State:</label>
+          <br>
+          <input id="state" class="form-control" type="text" formControlName="state" required>
+        </div>
+
+        <div class="form-group">
+          <label for="zip">Zip:</label>
+          <br>
+          <input id="zip" class="form-control" type="text" formControlName="zip" required>
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <br>
+          <input id="year" class="form-control" type="text" formControlName="year" required>
+        </div>
+
+        <div class="form-group">
+          <label for="census_taker">Census Taker:</label>
+          <br>
+          <input id="census_taker" class="form-control" type="text" formControlName="census_taker" required>
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">Add Census</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

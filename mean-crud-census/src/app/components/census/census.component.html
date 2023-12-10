@@ -1,0 +1,42 @@
+<div class="container mt-4 add-census-form">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-4">Census Records</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Census Taker</th>
+              <th scope="col">Number of People</th>
+              <th scope="col">State</th>
+              <th scope="col">City</th>
+              <th class="text-center" scope="col">Action</th>
+              <th class="text-center" scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let census of Census; let i = index">
+              <td>{{census.year}}</td>
+              <td>{{census.census_taker}}</td>
+              <td>{{census.number_of_people}}</td>
+              <td>{{census.state}}</td>
+              <td>{{census.city}}</td>
+              <td class="text-center">
+                <button class="btn btn-sm btn-primary" [routerLink]="['/update-census', census._id]">Update</button>
+              </td>
+              <td class="text-center">
+                <button class="btn btn-sm btn-danger" (click)="deleteCensus(census._id)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
