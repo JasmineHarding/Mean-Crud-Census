@@ -1,1 +1,11 @@
 # FinalExam
+![Alt text](mean-crud-census/image.png)
+![Alt text](mean-crud-census/image-1.png)
+![Alt text](mean-crud-census/image-2.png)
+![Alt text](mean-crud-census/image-3.png)
+![Alt text](mean-crud-census/image-4.png)
+![Alt text](mean-crud-census/image-5.png)
+![Alt text](mean-crud-census/image-6.png)
+![Alt text](mean-crud-census/image-7.png)
+![Alt text](mean-crud-census/image-8.png)
+![Alt text](mean-crud-census/image-9.png)
